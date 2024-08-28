@@ -1,19 +1,53 @@
-Sistema de Cadastro de Usuário
-Descrição
-O "Sistema de Cadastro de Usuário" é uma aplicação web desenvolvida em PHP para gerenciar o cadastro de usuários. O sistema permite que os administradores criem, atualizem, visualizem e excluam registros de usuários. É uma solução simples e eficaz para gerenciar informações de usuários em uma interface amigável.
+# Sistema de Cadastro de Usuários
 
-Funcionalidades
-Cadastro de Usuários: Permite adicionar novos usuários ao sistema com informações como nome, e-mail e senha.
-Atualização de Dados: Os dados dos usuários podem ser atualizados a qualquer momento.
-Visualização de Usuários: Exibe uma lista de todos os usuários cadastrados.
-Exclusão de Usuários: Permite remover usuários do sistema quando necessário.
-Formulário de Login: Interface para login com validação básica.
-Tecnologias Utilizadas
-Frontend:
-HTML
-CSS
-Backend:
-PHP
-MySQL
-Servidor Local:
-XAMPP/ MYSQL
+## Descrição
+
+- Desenvolva um sistema de cadastro de usuários. O sistema deve coletar o nome do usuário, email e a senha do usuario. 
+- Utilize **HTML** para a interface, **JavaScript** para validação no lado do cliente e **PHP** para processar e armazenar os dados no servidor (usando um banco de dados PostgreSQL ou MySQL).
+
+## O que será avaliado:
+
+- Conhecimento básico em javascript
+- Conhecimento básico em html e css
+- Conhecimento básico em php
+- Conhecimento básico em banco de dados
+
+## Requisitos
+
+### Interface em HTML:
+
+Um formulário com os seguintes campos:
+- **Nome** (texto)
+- **Email** (email)
+- **Senha** (númerico)
+- **Botão para enviar**
+
+### Validação com JavaScript:
+
+- Todos os campos são obrigatórios.
+- O email deve ter um formato válido.
+- A senha deve conter pelo menos 8 caracteres.
+
+### Processamento com PHP:
+
+- Receber os dados do formulário via método POST.
+- Validar novamente os dados no servidor para segurança.
+- Inserir os dados em uma tabela `usuario` no banco de dados PostgreSQL.
+- Retornar uma mensagem de sucesso ou erro para o usuário.
+
+### Banco de Dados PostgreSQL:
+
+Criação de uma tabela `usuario` com os seguintes campos:
+- `id` (chave primária, auto-incremento)
+- `nome` (VARCHAR)
+- `email` (VARCHAR)
+- `senha` (TEXT)
+- `data_criacao` (TIMESTAMP)
+
+
+### Alterações realziadas :
+- Nome do arquivo html para "php" para utilização do php juntamente com o html.
+- Adicionado CSS para estilização web.
+- Adicionado Script.js para enviar os dados e solicitar os dados.
+- Adicionado Configuração do banco de dados XAMPP MYSQL
+- Adicionado funcionalidade para que o PHP codifique a senha no banco de dados para segurança do cliente(sha1)
